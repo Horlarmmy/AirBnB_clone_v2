@@ -46,7 +46,7 @@ def number_template(n):
 @app.route('/number_odd_or_even/<int:n>')
 def even_odd(n):
     """ Displays an HTML of odd or even """
-    if (n %2 == 0):
+    if (n % 2 == 0):
         t_pe = 'even'
     else:
         t_pe = 'odd'
