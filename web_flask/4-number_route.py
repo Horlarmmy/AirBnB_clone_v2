@@ -30,11 +30,10 @@ def python(text='is cool'):
     """ Prints python with default text """
     return 'Python {}'.format(text.replace('_', ' '))
 
-@app.route('/number/<n>')
+@app.route('/number/<int:n>')
 def number(n):
     """ Prints the number passed as argument """
-    if (type(n) == 'int'):
-        return '{} is a number'.format(n)
+    return '{} is a number'.format(n)
 
 
 if __name__ == '__main__':
