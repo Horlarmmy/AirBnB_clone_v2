@@ -23,8 +23,8 @@ def c_text(text):
     """ Prints C with a text followed """
     return 'C {}'.format(text.replace('_', ' '))
 
-
-@app.route('/python/(<text>)')
+@app.route('/python')
+@app.route('/python/<text>')
 def python(text='is cool'):
     return 'Python {}'.format(text.replace('_', ' '))
 
